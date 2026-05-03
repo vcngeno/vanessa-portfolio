@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const fetch = require("node-fetch");
 const app = express();
 
 app.use(cors());
@@ -20,7 +19,8 @@ app.post("/chat", async (req, res) => {
     const data = await response.json();
     res.json(data);
   } catch (err) {
-    res.status(500).json({ error: "Something went wrong" });
+    console.error(err);
+    res.status(500).json({ error: err.message });
   }
 });
 
