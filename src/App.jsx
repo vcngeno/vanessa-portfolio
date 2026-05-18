@@ -269,6 +269,7 @@ export default function Portfolio() {
           <p style={{ fontSize: "1.15rem", color: COLORS.muted, maxWidth: 580, lineHeight: 1.75, marginBottom: "1rem" }}>
             Data Scientist & Analytics Engineer who turns complex datasets into <strong style={{ color: COLORS.text }}>evidence-based decisions</strong> — from correctional literacy systems to AI-powered tutoring platforms.
           </p>
+          <p style={{ fontSize: ".9rem", color: COLORS.muted, lineHeight: 1.7, maxWidth: 580, marginBottom: ".75rem" }}>Data Analytics and Business Intelligence professional with 3.5 years of direct analytics and BI experience, complemented by 5 years in customer-facing operational roles. Skilled in translating complex business needs into SQL and Python-based analytical solutions, building production-grade dashboards, and maintaining data governance standards across cross-functional environments.</p>
           <p style={{ fontSize: ".9rem", color: COLORS.muted, marginBottom: "2.5rem" }}>MS Data Analytics & Visualization · Yeshiva University</p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "4rem" }}>
             <a href="#projects" style={{ padding: ".75rem 1.75rem", background: COLORS.accent, color: "#fff", borderRadius: 8, fontWeight: 700, textDecoration: "none", fontSize: ".95rem" }}>View Projects</a>
