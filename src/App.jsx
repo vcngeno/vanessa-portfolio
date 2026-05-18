@@ -43,7 +43,7 @@ const projects = [
     tags: ["FastAPI", "LangChain", "RAG", "OpenAI"],
     color: "#34d399",
     link: "https://github.com/vcngeno/nia-capstone-docs",
-    preview: "/vanessa-portfolio/nia_screenshot.png",
+    preview: "/vanessa-portfolio/nia_screenshot.jpg",
   },
   {
     type: "STREAMLIT · GIS · AI",
