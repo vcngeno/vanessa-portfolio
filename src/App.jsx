@@ -18,23 +18,50 @@ const SkillIcons = {
 const skills = [
   { icon: "code", name: "Python / R / SQL", tags: ["Pandas", "NumPy", "FastAPI", "scikit-learn"] },
   { icon: "brain", name: "AI / ML / NLP", tags: ["LangChain", "RAG", "ChromaDB", "OpenAI", "Claude API"] },
-  { icon: "chart", name: "BI & Visualization", tags: ["Tableau", "Power BI", "Qlik Sense", "Streamlit"] },
+  { icon: "chart", name: "BI & Visualization", tags: ["Tableau", "Power BI", "Qlik Sense", "Streamlit", "MS Excel"] },
   { icon: "cloud", name: "Cloud & Tools", tags: ["AWS", "Docker", "MongoDB", "Railway", "Databricks", "BigQuery"] },
   { icon: "globe", name: "Statistical Methods", tags: ["Regression", "A/B Testing", "Hypothesis Testing", "Time-Series", "Forecasting"] },
   { icon: "database", name: "Data Engineering", tags: ["ETL Pipelines", "Data Governance", "Agile Delivery", "API Development"] },
 ];
 
 const projects = [
-  { type: "TABLEAU · NLP · PYTHON", title: "DOC Literacy Dashboard Ecosystem", org: "World Literacy Research Center", desc: "Architected a 15-table relational schema and generated a 4,563-row synthetic dataset simulating 100 inmates across 3 correctional facilities over 2 years. Built a 5-layer Tableau dashboard tracking literacy, GED readiness, and post-release outcomes. Demonstrated 32.8% recidivism rate vs. 65% national average.", tags: ["Python", "Tableau", "SQL", "Schema Design"], color: COLORS.accent, link: "#" },
-  { type: "LLM · FASTAPI · RAG", title: "AI-Powered Learning Assistant", org: "Academic Project — Fall 2025", desc: "Intelligent tutoring system using Python, FastAPI, and LLM technologies with adaptive learning, secure authentication, content filtering, and progress analytics for diverse learners.", tags: ["FastAPI", "LangChain", "RAG", "OpenAI"], color: COLORS.accent2, link: "#" },
-  { type: "STREAMLIT · GIS · AI", title: "Abraham Accords Literacy Dashboard", org: "Mapping Literacy for Humanity — Fall 2025", desc: "Multi-page Streamlit dashboard with gender equity analysis, GIS mapping, and AI forecasting. Integrated UNESCO, World Bank, and national datasets with validation frameworks for policy use.", tags: ["Streamlit", "GIS", "AI Forecasting", "UNESCO"], color: COLORS.accent3, link: "#" },
+  {
+    type: "TABLEAU · NLP · PYTHON",
+    title: "DOC Literacy Dashboard Ecosystem",
+    org: "World Literacy Research Center",
+    desc: "Architected a 15-table relational schema and generated a 4,563-row synthetic dataset simulating 100 inmates across 3 correctional facilities over 2 years. Built a 5-layer Tableau dashboard tracking literacy, GED readiness, and post-release outcomes. Demonstrated 32.8% recidivism rate vs. 65% national average.",
+    tags: ["Python", "Tableau", "SQL", "Schema Design"],
+    color: "#a78bfa",
+    link: "https://public.tableau.com/app/profile/vanessa.ngeno/viz/DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence",
+    preview: "https://public.tableau.com/static/images/De/DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence/1.png",
+  },
+  {
+    type: "LLM · FASTAPI · RAG",
+    title: "AI-Powered Learning Assistant",
+    org: "Academic Project — Fall 2025",
+    desc: "Intelligent tutoring system using Python, FastAPI, and LLM technologies with adaptive learning, secure authentication, content filtering, and progress analytics for diverse learners.",
+    tags: ["FastAPI", "LangChain", "RAG", "OpenAI"],
+    color: "#34d399",
+    link: "https://github.com/vcngeno/nia-capstone-docs",
+    preview: null,
+  },
+  {
+    type: "STREAMLIT · GIS · AI",
+    title: "Abraham Accords Literacy Dashboard",
+    org: "Mapping Literacy for Humanity — Fall 2025",
+    desc: "Multi-page Streamlit dashboard with gender equity analysis, GIS mapping, and AI forecasting. Integrated UNESCO, World Bank, and national datasets with validation frameworks for policy use.",
+    tags: ["Streamlit", "GIS", "AI Forecasting", "UNESCO"],
+    color: "#60a5fa",
+    link: "https://huggingface.co/spaces/vngeno/abraham-accords-mapping-literacy-dashboard",
+    preview: null,
+  },
 ];
 
 const experience = [
-  { role: "Data Analytics Intern", company: "Peblink", period: "Sep 2025 – Present", bullets: ["Translated business requirements into a 15-table relational schema and 4,563-row synthetic dataset for a full correctional literacy lifecycle", "Built 5-layer interactive Tableau Public dashboard for DOC partner and funder reporting", "Designed proprietary KPIs — Overall Literacy Score, GED Readiness Score, Program Effectiveness Score — with formal governance documentation", "Applied ML models and GIS visualizations across 5 countries integrating UNESCO and World Bank datasets"] },
-  { role: "Data Analytics Partner", company: "Safaricom PLC", period: "Sep 2023 – Feb 2024", bullets: ["Customer behavior analysis via SQL, Python & Qlik Sense → 25% retention increase, $5M cost savings", "Automated reporting pipelines, reducing analysis turnaround by 40%"] },
-  { role: "Regional Business Intelligence Lead", company: "Safaricom PLC", period: "Jan 2023 – Aug 2023", bullets: ["Drove 30% increase in mobile money transactions and 12% growth in active subscribers", "Designed & executed retention initiatives → 15% lift, 150K additional customers retained", "Built KPI dashboards and optimized SQL queries for financial & operational planning"] },
-  { role: "Customer Experience Executive", company: "Safaricom PLC", period: "Oct 2016 – Dec 2022", bullets: ["Analyzed workflows and customer data to identify service bottlenecks", "Maintained structured documentation of processes for operational consistency"] },
+  { role: "Data Analytics Intern", company: "Peblink", period: "Sep 2025 – Present", bullets: ["Translated business requirements into analytical solutions including a 15-table relational schema and 4,563-row synthetic dataset supporting a full correctional literacy program lifecycle", "Built a 5-layer interactive Tableau Public dashboard covering literacy progression, cognitive pattern detection, GED readiness, workforce completion, and post-release outcomes for DOC partner and funder reporting", "Designed proprietary composite KPIs including Overall Literacy Score, GED Readiness Score, and Program Effectiveness Score, establishing a licensable data asset with formal documentation", "Applied machine learning models and GIS-based visualizations to identify literacy patterns across five countries, integrating UNESCO and World Bank datasets"] },
+  { role: "Data Analytics Partner", company: "Safaricom PLC", period: "Sep 2023 – Feb 2024", bullets: ["Conducted customer behavior analysis using SQL, Python, and Qlik Sense, contributing to a 25% increase in retention and $5M in cost savings", "Automated ETL reporting pipelines, reducing analysis turnaround time by 40% and improving decision-making efficiency", "Delivered actionable insights through dashboards and reports to support strategic business operations"] },
+  { role: "Regional Business Intelligence Lead", company: "Safaricom PLC", period: "Jan 2023 – Aug 2023", bullets: ["Owned end-to-end analytics delivery across multiple business units, driving a 30% increase in mobile money transactions and 12% growth in active subscribers", "Built and maintained Tableau and Power BI dashboards tracking KPIs, supporting a 10% reduction in customer complaints", "Developed and optimized SQL queries for forecasting and reporting, enabling faster insight delivery across Finance, Sales, and Operations", "Applied descriptive and inferential statistical methods to identify trends, validated KPI definitions with stakeholders, and documented data flows for governance"] },
+  { role: "Customer Experience Executive", company: "Safaricom PLC", period: "Oct 2016 – Dec 2022", bullets: ["Analyzed operational workflows and customer data to identify service bottlenecks and inefficiencies, collaborating across teams to implement process improvements", "Maintained structured documentation of processes and decision flows to ensure operational consistency and data integrity"] },
 ];
 
 const stats = [
@@ -43,55 +70,6 @@ const stats = [
   { num: "150K", label: "Customers retained" },
   { num: "32.8%", label: "Recidivism rate vs 65% avg" },
 ];
-
-// ── Tableau Modal ─────────────────────────────────────────────────
-function TableauModal({ onClose }) {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    script.async = true;
-    document.body.appendChild(script);
-    return () => document.body.removeChild(script);
-  }, []);
-
-  return (
-    <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,.85)", zIndex: 1000, display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}
-      onClick={onClose}>
-      <div style={{ background: "#13142a", border: "1px solid #1e1f35", borderRadius: 16, padding: "1.5rem", maxWidth: 700, width: "100%", position: "relative" }}
-        onClick={e => e.stopPropagation()}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
-          <h3 style={{ color: "#e8e8f8", fontSize: "1rem", fontWeight: 700 }}>DOC Literacy Dashboard Ecosystem</h3>
-          <button onClick={onClose} style={{ background: "transparent", border: "none", color: "#8888aa", fontSize: "1.5rem", cursor: "pointer", lineHeight: 1 }}>×</button>
-        </div>
-        <div className='tableauPlaceholder' id='viz1779086308979' style={{ position: "relative", width: "100%" }}>
-          <noscript>
-            <a href='#'><img alt='Layer 1: Intake & Baseline Intelligence' src='https://public.tableau.com/static/images/De/DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence/1_rss.png' style={{ border: "none" }} /></a>
-          </noscript>
-          <object className='tableauViz' style={{ display: "none", width: "100%" }}>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https://public.tableau.com/static/images/De/DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence/1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-          </object>
-        </div>
-        <p style={{ fontSize: ".8rem", color: "#8888aa", marginTop: "1rem", textAlign: "center" }}>
-          <a href="https://public.tableau.com/app/profile/vanessa.ngeno/viz/DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence" target="_blank" rel="noreferrer" style={{ color: "#a78bfa" }}>Open in Tableau Public →</a>
-        </p>
-      </div>
-    </div>
-  );
-}
-
-// ── Contact Form ───────────────────────────────────────────────────
 
 function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -165,7 +143,6 @@ function ContactForm() {
   );
 }
 
-// ── AI Chat ────────────────────────────────────────────────────────
 function AIChat() {
   const [msgs, setMsgs] = useState([{ role: "assistant", text: "Hi! I'm Vanessa's AI assistant. Ask me anything about her experience, projects, or skills." }]);
   const [input, setInput] = useState("");
@@ -176,10 +153,10 @@ function AIChat() {
 Background:
 - MS Data Analytics & Visualization, Yeshiva University (Dec 2025, GPA 3.4)
 - BS Actuarial Science, Jomo Kenyatta University (2015, GPA 3.0)
-- Skills: Python, R, SQL, JavaScript, Tableau, Power BI, Qlik Sense, AWS, Docker, MongoDB, Railway, LangChain, RAG, ChromaDB, OpenAI API, Claude API, GIS, NLP
-- Recent: Data Analytics Intern at Peblink — built 15-table schema, 4,563-row synthetic dataset, 5-layer Tableau dashboard for DOC literacy ecosystem. Showed 32.8% recidivism vs 65% national average.
-- Prior: Safaricom PLC — BI Lead (30% mobile money growth, 150K customers retained, $5M savings), Data Analytics Partner, Customer Experience Executive (6 years)
-- Projects: DOC Literacy Dashboard, AI-Powered Learning Assistant (FastAPI+LLM+RAG), Abraham Accords Literacy Dashboard (Streamlit+GIS+AI)
+- Skills: Python, R, SQL, JavaScript, Tableau, Power BI, Qlik Sense, Streamlit, AWS, Docker, MongoDB, Railway, Databricks, BigQuery, LangChain, RAG, ChromaDB, OpenAI API, Claude API, ETL Pipelines, Data Governance, Agile Delivery, A/B Testing, Hypothesis Testing, Regression Modeling, Time-Series Forecasting
+- Current: Data Analytics Intern at Peblink (Sep 2025-Present) — translated business requirements into 15-table schema and 4,563-row synthetic dataset, built 5-layer Tableau dashboard for DOC literacy ecosystem, designed proprietary KPIs with formal governance documentation, applied ML and GIS across 5 countries with UNESCO and World Bank data
+- Prior: Safaricom PLC — BI Lead (30% mobile money growth, 10% reduction in complaints, faster insight delivery), Data Analytics Partner (25% retention increase, $5M savings, 40% faster ETL), Customer Experience Executive (6 years)
+- Projects: DOC Literacy Dashboard (Tableau), AI-Powered Learning Assistant (FastAPI+LangChain+RAG+Claude API), Abraham Accords Literacy Dashboard (Streamlit+GIS+AI forecasting)
 - Leadership: Co-founder Math Tutoring & Literacy Initiative Kenya, Volunteer National Tree Planting Day
 - Based in College Point, NY | Open to opportunities across the USA
 Answer questions about Vanessa accurately and enthusiastically. Keep answers concise (2-4 sentences). If asked something not in her resume, say you don't have that info but suggest contacting her directly.`;
@@ -196,9 +173,7 @@ Answer questions about Vanessa accurately and enthusiastically. Keep answers con
       const history = [...msgs, userMsg].map(m => ({ role: m.role === "assistant" ? "assistant" : "user", content: m.text }));
       const res = await fetch("https://vanessa-portfolio-production.up.railway.app/chat", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 1000, system: SYSTEM, messages: history }),
       });
       const data = await res.json();
@@ -239,11 +214,11 @@ Answer questions about Vanessa accurately and enthusiastically. Keep answers con
   );
 }
 
-// ── Main App ───────────────────────────────────────────────────────
 export default function Portfolio() {
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState({});
-  const [showTableau, setShowTableau] = useState(false);
+
+  useEffect(() => { window.history.scrollRestoration = "manual"; setTimeout(() => window.scrollTo({ top: 0, left: 0, behavior: "instant" }), 50); }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -269,14 +244,12 @@ export default function Portfolio() {
   return (
     <div style={{ background: COLORS.bg, color: COLORS.text, minHeight: "100vh", fontFamily: "'Segoe UI', system-ui, sans-serif", overflowX: "hidden" }}>
 
-      {/* BG */}
       <div style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 0 }}>
         <div style={{ position: "absolute", width: 600, height: 600, borderRadius: "50%", background: `radial-gradient(circle,rgba(167,139,250,.08),transparent 70%)`, top: -150, right: -150 }} />
         <div style={{ position: "absolute", width: 500, height: 500, borderRadius: "50%", background: `radial-gradient(circle,rgba(52,211,153,.06),transparent 70%)`, bottom: -100, left: -100 }} />
         <div style={{ position: "absolute", inset: 0, backgroundImage: `linear-gradient(rgba(167,139,250,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(167,139,250,.025) 1px,transparent 1px)`, backgroundSize: "60px 60px" }} />
       </div>
 
-      {/* NAV */}
       <nav style={{ position: "fixed", top: 0, width: "100%", zIndex: 100, backdropFilter: scrolled ? "blur(16px)" : "none", background: scrolled ? "rgba(7,8,15,.85)" : "transparent", borderBottom: scrolled ? `1px solid ${COLORS.border}` : "none", padding: "1rem 2rem", display: "flex", justifyContent: "space-between", alignItems: "center", transition: ".3s" }}>
         <div style={{ fontWeight: 800, fontSize: "1.1rem", background: `linear-gradient(135deg,${COLORS.accent},${COLORS.accent2})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>VN.</div>
         <div style={{ display: "flex", gap: "1.75rem" }}>
@@ -287,10 +260,8 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* HERO */}
       <section id="about" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "8rem 2rem 4rem", position: "relative", zIndex: 1 }}>
         <div style={{ maxWidth: 860, width: "100%" }}>
-          <div style={{ display: "inline-block", background: "rgba(167,139,250,.12)", border: "1px solid rgba(167,139,250,.25)", color: COLORS.accent, padding: ".3rem 1rem", borderRadius: 20, fontSize: ".78rem", fontWeight: 600, letterSpacing: ".06em", marginBottom: "1.5rem" }}>✦ Open to Full-Time Opportunities · USA</div>
           <h1 style={{ fontSize: "clamp(2.8rem,6vw,5rem)", fontWeight: 900, lineHeight: 1.05, marginBottom: "1.25rem" }}>
             Vanessa<br />
             <span style={{ background: `linear-gradient(135deg,${COLORS.accent},${COLORS.accent2},${COLORS.accent3})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Ngeno</span>
@@ -298,7 +269,7 @@ export default function Portfolio() {
           <p style={{ fontSize: "1.15rem", color: COLORS.muted, maxWidth: 580, lineHeight: 1.75, marginBottom: "1rem" }}>
             Data Scientist & Analytics Engineer who turns complex datasets into <strong style={{ color: COLORS.text }}>evidence-based decisions</strong> — from correctional literacy systems to AI-powered tutoring platforms.
           </p>
-          <p style={{ fontSize: ".9rem", color: COLORS.muted, marginBottom: "2.5rem" }}>MS Data Analytics & Visualization · Yeshiva University &nbsp;|&nbsp; Ex-Safaricom BI Lead · Nairobi</p>
+          <p style={{ fontSize: ".9rem", color: COLORS.muted, marginBottom: "2.5rem" }}>MS Data Analytics & Visualization · Yeshiva University</p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "4rem" }}>
             <a href="#projects" style={{ padding: ".75rem 1.75rem", background: COLORS.accent, color: "#fff", borderRadius: 8, fontWeight: 700, textDecoration: "none", fontSize: ".95rem" }}>View Projects</a>
             <a href="#contact" style={{ padding: ".75rem 1.75rem", background: "transparent", color: COLORS.text, border: `1px solid ${COLORS.border}`, borderRadius: 8, fontWeight: 600, textDecoration: "none", fontSize: ".95rem" }}>Get In Touch</a>
@@ -314,7 +285,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* AI CHAT */}
       <section style={{ padding: "2rem 2rem 5rem", maxWidth: 860, margin: "0 auto", position: "relative", zIndex: 1 }} data-id="chat">
         <div style={fadeIn("chat")}>
           <div style={{ textAlign: "center", marginBottom: "2rem" }}>
@@ -326,7 +296,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* SKILLS */}
       <section id="skills" style={{ padding: "5rem 2rem", maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div data-id="skills-header" style={fadeIn("skills-header")}>
           <div style={{ color: COLORS.accent, fontSize: ".78rem", fontWeight: 600, letterSpacing: ".1em", marginBottom: ".75rem" }}>TOOLKIT</div>
@@ -348,7 +317,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* PROJECTS */}
       <section id="projects" style={{ padding: "5rem 2rem", maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div data-id="proj-header" style={fadeIn("proj-header")}>
           <div style={{ color: COLORS.accent2, fontSize: ".78rem", fontWeight: 600, letterSpacing: ".1em", marginBottom: ".75rem" }}>PORTFOLIO</div>
@@ -357,24 +325,34 @@ export default function Portfolio() {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(320px,1fr))", gap: "1.5rem" }}>
           {projects.map((p, i) => (
-            <div key={i} data-id={`proj-${i}`} style={{ ...fadeIn(`proj-${i}`, { transitionDelay: `${i * .1}s` }), background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 16, padding: "1.75rem", position: "relative", overflow: "hidden", cursor: "default", transition: "border-color .2s, transform .2s" }}
+            <div key={i} data-id={`proj-${i}`} style={{ ...fadeIn(`proj-${i}`, { transitionDelay: `${i * .1}s` }), background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 16, overflow: "hidden", cursor: "default", transition: "border-color .2s, transform .2s", position: "relative" }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = p.color; e.currentTarget.style.transform = "translateY(-5px)"; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = COLORS.border; e.currentTarget.style.transform = "translateY(0)"; }}>
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg,${p.color},transparent)` }} />
-              <div style={{ fontSize: ".72rem", color: p.color, fontWeight: 700, letterSpacing: ".07em", marginBottom: ".5rem" }}>{p.type}</div>
-              <h3 style={{ fontSize: "1.05rem", marginBottom: ".25rem" }}>{p.title}</h3>
-              <div style={{ fontSize: ".78rem", color: COLORS.muted, marginBottom: ".85rem" }}>{p.org}</div>
-              <p style={{ fontSize: ".875rem", color: COLORS.muted, lineHeight: 1.65, marginBottom: "1.25rem" }}>{p.desc}</p>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: ".35rem", marginBottom: "1.25rem" }}>
-                {p.tags.map((t, j) => <span key={j} style={{ background: "rgba(255,255,255,.05)", border: `1px solid ${COLORS.border}`, color: COLORS.muted, padding: ".18rem .55rem", borderRadius: 4, fontSize: ".72rem" }}>{t}</span>)}
+              {p.preview && (
+                <a href={p.link} target="_blank" rel="noreferrer">
+                  <div style={{ width: "100%", height: 160, overflow: "hidden", borderBottom: `1px solid ${COLORS.border}` }}>
+                    <img src={p.preview} alt={p.title} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", transition: "transform .3s" }}
+                      onMouseEnter={e => e.target.style.transform = "scale(1.03)"}
+                      onMouseLeave={e => e.target.style.transform = "scale(1)"} />
+                  </div>
+                </a>
+              )}
+              <div style={{ padding: "1.75rem" }}>
+                <div style={{ fontSize: ".72rem", color: p.color, fontWeight: 700, letterSpacing: ".07em", marginBottom: ".5rem" }}>{p.type}</div>
+                <h3 style={{ fontSize: "1.05rem", marginBottom: ".25rem" }}>{p.title}</h3>
+                <div style={{ fontSize: ".78rem", color: COLORS.muted, marginBottom: ".85rem" }}>{p.org}</div>
+                <p style={{ fontSize: ".875rem", color: COLORS.muted, lineHeight: 1.65, marginBottom: "1.25rem" }}>{p.desc}</p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: ".35rem", marginBottom: "1.25rem" }}>
+                  {p.tags.map((t, j) => <span key={j} style={{ background: "rgba(255,255,255,.05)", border: `1px solid ${COLORS.border}`, color: COLORS.muted, padding: ".18rem .55rem", borderRadius: 4, fontSize: ".72rem" }}>{t}</span>)}
+                </div>
+                <a href={p.link} target="_blank" rel="noreferrer" style={{ fontSize: ".8rem", color: p.color, fontWeight: 700, textDecoration: "none" }}>View Project →</a>
               </div>
-              <a href={p.link} onClick={p.title === "DOC Literacy Dashboard Ecosystem" ? (e) => { e.preventDefault(); setShowTableau(true); } : undefined} style={{ fontSize: ".8rem", color: p.color, fontWeight: 700, textDecoration: "none" }}>View Project →</a>
             </div>
           ))}
         </div>
       </section>
 
-      {/* EXPERIENCE */}
       <section id="experience" style={{ padding: "5rem 2rem", maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div data-id="exp-header" style={fadeIn("exp-header")}>
           <div style={{ color: COLORS.accent3, fontSize: ".78rem", fontWeight: 600, letterSpacing: ".1em", marginBottom: ".75rem" }}>CAREER</div>
@@ -397,7 +375,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* CONTACT */}
       <section id="contact" style={{ padding: "5rem 2rem", maxWidth: 860, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div data-id="contact" style={fadeIn("contact")}>
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
@@ -409,12 +386,12 @@ export default function Portfolio() {
             <div style={{ display: "flex", flexDirection: "column", gap: ".85rem" }}>
               {[
                 { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>, label: "vanessangeno@gmail.com", href: "mailto:vanessangeno@gmail.com" },
-                { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>, label: "LinkedIn", href: "#" },
+                { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>, label: "LinkedIn", href: "https://www.linkedin.com/in/vanessa-ngeno-048391180/" },
                 { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>, label: "GitHub", href: "https://github.com/vcngeno" },
-                { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>, label: "Tableau Public", href: "#" },
-                { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="12" y1="18" x2="12" y2="12" /><line x1="9" y1="15" x2="15" y2="15" /></svg>, label: "Download Resume", href: "#" },
+                { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>, label: "Tableau Public", href: "https://public.tableau.com/app/profile/vanessa.ngeno" },
+                { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="12" y1="18" x2="12" y2="12" /><line x1="9" y1="15" x2="15" y2="15" /></svg>, label: "Download Resume", href: "https://vcngeno.github.io/vanessa-portfolio/vanessa_ngeno_resume.pdf" },
               ].map((l, i) => (
-                <a key={i} href={l.href} style={{ display: "flex", alignItems: "center", gap: ".75rem", background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 10, padding: ".85rem 1.1rem", color: COLORS.text, textDecoration: "none", fontSize: ".9rem", transition: "border-color .2s" }}
+                <a key={i} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: ".75rem", background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 10, padding: ".85rem 1.1rem", color: COLORS.text, textDecoration: "none", fontSize: ".9rem", transition: "border-color .2s" }}
                   onMouseEnter={e => e.currentTarget.style.borderColor = COLORS.accent}
                   onMouseLeave={e => e.currentTarget.style.borderColor = COLORS.border}>
                   <span style={{ display: "flex", alignItems: "center" }}>{l.icon}</span><span>{l.label}</span>
