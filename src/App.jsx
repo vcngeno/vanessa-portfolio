@@ -28,8 +28,8 @@ const projects = [
   {
     type: "TABLEAU · NLP · PYTHON",
     title: "DOC Literacy Dashboard Ecosystem",
-    org: "World Literacy Research Center",
-    desc: "Architected a 15-table relational schema and generated a 4,563-row synthetic dataset simulating 100 inmates across 3 correctional facilities over 2 years. Built a 5-layer Tableau dashboard tracking literacy, GED readiness, and post-release outcomes. Demonstrated 32.8% recidivism rate vs. 65% national average.",
+    org: "World Literacy Research Center — Spring 2026",
+    desc: "Designed a 15-table relational schema from scratch, generated a 4,563-row synthetic dataset in Python, and built a 5-layer Tableau Public dashboard tracking inmate literacy progression, GED readiness, and post-release outcomes. Created composite performance metrics with formal governance documentation for government and nonprofit stakeholders.",
     tags: ["Python", "Tableau", "SQL", "Schema Design"],
     color: "#a78bfa",
     link: "https://public.tableau.com/app/profile/vanessa.ngeno/viz/DeptofCorrectionsInmateLiteracyDashboard/Layer1IntakeBaselineIntelligence",
@@ -39,17 +39,17 @@ const projects = [
     type: "LLM · FASTAPI · RAG",
     title: "AI-Powered Learning Assistant",
     org: "Academic Project — Fall 2025",
-    desc: "Intelligent tutoring system using Python, FastAPI, and LLM technologies with adaptive learning, secure authentication, content filtering, and progress analytics for diverse learners.",
-    tags: ["FastAPI", "LangChain", "RAG", "OpenAI"],
+    desc: "Engineered a production AI platform end-to-end using Python, FastAPI, LangChain, RAG architecture, ChromaDB, and the Claude API. Built analytics views tracking user engagement and system performance. A working tool that teaches and enables others to understand how LLMs can be deployed in real applications.",
+    tags: ["FastAPI", "LangChain", "RAG", "Claude API"],
     color: "#34d399",
-    link: "https://github.com/vcngeno/nia-capstone-docs",
+    link: "https://nia-frontend-production.up.railway.app/login",
     preview: "/vanessa-portfolio/nia_screenshot.jpg",
   },
   {
     type: "STREAMLIT · GIS · AI",
     title: "Abraham Accords Literacy Dashboard",
     org: "Mapping Literacy for Humanity — Fall 2025",
-    desc: "Multi-page Streamlit dashboard with gender equity analysis, GIS mapping, and AI forecasting. Integrated UNESCO, World Bank, and national datasets with validation frameworks for policy use.",
+    desc: "Scoped, built, and delivered an interactive Streamlit dashboard integrating multi-source international datasets from UNESCO, World Bank, and national governments. Embedded validation frameworks, forecasting modules, and policy-ready visualizations for policymakers and NGO partners.",
     tags: ["Streamlit", "GIS", "AI Forecasting", "UNESCO"],
     color: "#60a5fa",
     link: "https://huggingface.co/spaces/vngeno/abraham-accords-mapping-literacy-dashboard",
@@ -58,8 +58,8 @@ const projects = [
 ];
 
 const experience = [
-  { role: "Data Analytics Intern", company: "Peblink", period: "Sep 2025 – Present", bullets: ["Translated business requirements into analytical solutions including a 15-table relational schema and 4,563-row synthetic dataset supporting a full correctional literacy program lifecycle", "Built a 5-layer interactive Tableau Public dashboard covering literacy progression, cognitive pattern detection, GED readiness, workforce completion, and post-release outcomes for DOC partner and funder reporting", "Designed proprietary composite KPIs including Overall Literacy Score, GED Readiness Score, and Program Effectiveness Score, establishing a licensable data asset with formal documentation", "Applied machine learning models and GIS-based visualizations to identify literacy patterns across five countries, integrating UNESCO and World Bank datasets"] },
-  { role: "Data Analytics Partner", company: "Safaricom PLC", period: "Sep 2023 – Feb 2024", bullets: ["Conducted customer behavior analysis using SQL, Python, and Qlik Sense, contributing to a 25% increase in retention and $5M in cost savings", "Automated ETL reporting pipelines, reducing analysis turnaround time by 40% and improving decision-making efficiency", "Delivered actionable insights through dashboards and reports to support strategic business operations"] },
+  { role: "Data Analytics Intern", company: "Peblink", period: "Sep 2025 – Present", bullets: ["Collect and validate literacy datasets from UNESCO, the World Bank, and national ministries of education across five countries, applying AI tools to detect inconsistencies and missing data before analysis", "Identify correlations and emerging patterns in regional literacy outcomes and develop a literacy need ranking methodology across Accords nations, incorporating AI-supported forecasts of dropout rates and literacy decline", "Construct the Abraham Accords Literacy Need Index, combining reading levels, gender parity, and school retention into a single benchmark score visualized through a GIS-based heat map", "Train and enable cross-functional stakeholders to understand and act on literacy data insights"] },
+  { role: "Data Analytics Partner", company: "Safaricom PLC", period: "Sep 2023 – Feb 2024", bullets: ["Produced recurring and ad hoc reports for the Customer Operations department, categorizing call center volume by voice, data, and SMS issue types using SQL and Qlik Sense", "Analyzed agent-level metrics — occupancy, calls handled, customer satisfaction, and resolution rates — via SUMIFS and pivot-table summaries in Excel, surfacing weekly trends that informed staffing and coaching decisions"] },
   { role: "Regional Business Intelligence Lead", company: "Safaricom PLC", period: "Jan 2023 – Aug 2023", bullets: ["Owned end-to-end analytics delivery across multiple business units, driving a 30% increase in mobile money transactions and 12% growth in active subscribers", "Built and maintained Tableau and Power BI dashboards tracking KPIs, supporting a 10% reduction in customer complaints", "Developed and optimized SQL queries for forecasting and reporting, enabling faster insight delivery across Finance, Sales, and Operations", "Applied descriptive and inferential statistical methods to identify trends, validated KPI definitions with stakeholders, and documented data flows for governance"] },
   { role: "Customer Experience Executive", company: "Safaricom PLC", period: "Oct 2016 – Dec 2022", bullets: ["Analyzed operational workflows and customer data to identify service bottlenecks and inefficiencies, collaborating across teams to implement process improvements", "Maintained structured documentation of processes and decision flows to ensure operational consistency and data integrity"] },
 ];
@@ -153,13 +153,13 @@ function AIChat() {
 Background:
 - MS Data Analytics & Visualization, Yeshiva University (Dec 2025, GPA 3.4)
 - BS Actuarial Science, Jomo Kenyatta University (2015, GPA 3.0)
-- Skills: Python, R, SQL, JavaScript, Tableau, Power BI, Qlik Sense, Streamlit, AWS, Docker, MongoDB, Railway, Databricks, BigQuery, LangChain, RAG, ChromaDB, OpenAI API, Claude API, ETL Pipelines, Data Governance, Agile Delivery, A/B Testing, Hypothesis Testing, Regression Modeling, Time-Series Forecasting
-- Current: Data Analytics Intern at Peblink (Sep 2025-Present) — translated business requirements into 15-table schema and 4,563-row synthetic dataset, built 5-layer Tableau dashboard for DOC literacy ecosystem, designed proprietary KPIs with formal governance documentation, applied ML and GIS across 5 countries with UNESCO and World Bank data
-- Prior: Safaricom PLC — BI Lead (30% mobile money growth, 10% reduction in complaints, faster insight delivery), Data Analytics Partner (25% retention increase, $5M savings, 40% faster ETL), Customer Experience Executive (6 years)
-- Projects: DOC Literacy Dashboard (Tableau), AI-Powered Learning Assistant (FastAPI+LangChain+RAG+Claude API), Abraham Accords Literacy Dashboard (Streamlit+GIS+AI forecasting)
-- Leadership: Co-founder Math Tutoring & Literacy Initiative Kenya, Volunteer National Tree Planting Day
+- Skills: Python, R, SQL, JavaScript, Tableau, Power BI, Qlik Sense, Streamlit, MS Excel, AWS, Docker, MongoDB, Railway, Databricks, BigQuery, LangChain, RAG, ChromaDB, OpenAI API, Claude API, ETL Pipelines, Data Governance, Agile Delivery, A/B Testing, Hypothesis Testing, Regression Modeling, Time-Series Forecasting
+- Current: Data Analytics Intern at Peblink (Sep 2025-Present) — collects and validates literacy datasets from UNESCO and World Bank across 5 countries, constructs Abraham Accords Literacy Need Index with GIS heat map, identifies patterns in regional literacy outcomes with AI-supported forecasts, trains cross-functional stakeholders on data insights
+- Prior: Safaricom PLC — BI Lead (30% mobile money growth, 10% reduction in complaints), Data Analytics Partner (SQL/Qlik Sense reporting, Excel analytics, agent metrics), Customer Experience Executive (6 years)
+- Projects: DOC Literacy Dashboard (Tableau, Spring 2026), AI-Powered Learning Assistant (FastAPI+LangChain+RAG+Claude API, live at nia-frontend-production.up.railway.app), Abraham Accords Literacy Dashboard (Streamlit+GIS+AI forecasting)
+- Leadership: Co-founder Math Tutoring & Literacy Initiative Kenya, Volunteer National Tree Planting Day, regularly translates technical AI/data work for non-technical audiences
 - Based in College Point, NY | Open to opportunities across the USA
-Answer questions about Vanessa accurately and enthusiastically. Keep answers concise (2-4 sentences). If asked something not in her resume, say you don't have that info but suggest contacting her directly.`;
+Answer questions about Vanessa accurately and enthusiastically. Keep answers concise (2-4 sentences). If asked something not in her resume, say you do not have that info but suggest contacting her directly.`;
 
   useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: "smooth" }); }, [msgs]);
 
@@ -328,7 +328,7 @@ export default function Portfolio() {
             <div key={i} data-id={`proj-${i}`} style={{ ...fadeIn(`proj-${i}`, { transitionDelay: `${i * .1}s` }), background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 16, overflow: "hidden", cursor: "default", transition: "border-color .2s, transform .2s", position: "relative" }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = p.color; e.currentTarget.style.transform = "translateY(-5px)"; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = COLORS.border; e.currentTarget.style.transform = "translateY(0)"; }}>
-              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg,${p.color},transparent)` }} />
+              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg,${p.color},transparent)`, zIndex: 1 }} />
               {p.preview && (
                 <a href={p.link} target="_blank" rel="noreferrer">
                   <div style={{ width: "100%", height: 160, overflow: "hidden", borderBottom: `1px solid ${COLORS.border}` }}>
