@@ -16,12 +16,12 @@ const SkillIcons = {
 };
 
 const skills = [
-  { icon: "code", name: "Python / R / SQL", tags: ["Pandas", "NumPy", "FastAPI", "scikit-learn"] },
-  { icon: "brain", name: "AI / ML / NLP", tags: ["LangChain", "RAG", "ChromaDB", "OpenAI", "Claude API"] },
-  { icon: "chart", name: "BI & Visualization", tags: ["Tableau", "Power BI", "Qlik Sense", "Streamlit", "MS Excel"] },
-  { icon: "cloud", name: "Cloud & Tools", tags: ["AWS", "Docker", "MongoDB", "Railway", "Databricks", "BigQuery"] },
-  { icon: "globe", name: "Statistical Methods", tags: ["Regression", "A/B Testing", "Hypothesis Testing", "Time-Series", "Forecasting"] },
-  { icon: "database", name: "Data Engineering", tags: ["ETL Pipelines", "Data Governance", "Agile Delivery", "API Development"] },
+  { icon: "code", name: "Programming Languages", tags: ["Python", "R", "SQL", "JavaScript"] },
+  { icon: "brain", name: "AI / ML / NLP", tags: ["LangChain", "RAG", "ChromaDB", "Claude API", "OpenAI API"] },
+  { icon: "chart", name: "BI & Visualization", tags: ["Tableau", "Power BI", "Qlik Sense", "Streamlit"] },
+  { icon: "cloud", name: "Cloud & Tools", tags: ["Railway", "AWS", "Docker", "MongoDB"] },
+  { icon: "globe", name: "Social Impact & Teaching", tags: ["Cross-functional Communication", "EdTech Systems", "Policy Visualization", "Stakeholder Enablement"] },
+  { icon: "database", name: "Other", tags: ["Data Visualization", "API Development", "Relational Schema Design", "EdTech Systems"] },
 ];
 
 const projects = [
